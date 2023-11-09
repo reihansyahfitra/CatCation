@@ -3,16 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>CatCation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <style>
-        @font-face{
-            font-family: 'Inter', sans-serif;
-            src: url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         div{
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>  
@@ -23,7 +20,7 @@
             <div class="col-3">
                 <ul class="nav justify-content-start p-3"> 
                     <li class="nav-item">
-                        <img src="image/Logo.png" alt="Logo" width=" 50px">
+                        <img src="image/Logo.png" alt="Logo" width=" 35px">
                         <img src="image/FontLogo.png" alt="FontLogo" width="110px">
                     </li>
                 </ul>
@@ -32,19 +29,22 @@
             <div class="col-6 my-auto">
                 <ul class="nav justify-content-center p-3">
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold" style="color: #FF5800;" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active fw-bold" style="color: #FF5800;" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bold" href="#">About</a>
+                        <a class="nav-link text-black fw-bold" href="#about-us">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bold" href="#">Services</a>
+                        <a class="nav-link text-black fw-bold" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bold" href="#">FAQs</a>  
+                        <a class="nav-link text-black fw-bold" href="faq-s">FAQs</a>  
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bold" href="#">Contact Us</a>
+                        <a class="nav-link text-black fw-bold" href="#contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fw-bold" href="blog.html">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -58,9 +58,12 @@
                     </li>
                     <li class="nav-item">
                         <button type="button" class="btn btn-warning text-light shadow-sm" style="background-color: #FF5800;
-                        ;">Login</button>
+                        ;">Log in</button>
                     </li>
                 </ul>
+                <button type="button" class="btn shadow-sm" style="border-color: #FF5800;">
+                    <div  class="fw-bold" style="color: #FF5800;">Read More</div>
+                </button>
             </div>
         </div>
 <!-- Ini bagian Home -->
@@ -127,7 +130,7 @@
                             <img src="image/Kucing4Home.png" alt="Kucing4Home" width="100%">
                         </div>
                     </div>
-                </div><br><br><br><br><br>
+                </div><br><br><br><br><br id="about-us">
             </div>
             <div class="col-2"></div>
         </div>
@@ -151,7 +154,7 @@
                             <img src="image/AboutUs.png" alt="AboutUs" width="100%">
                         </div>
                     </div>
-                </div>
+                </div><br id="services">
             </div>
             <div class="col-2"></div>
         </div>
@@ -168,7 +171,7 @@
                         <div class="card shadow" >
                             <img src="image/Services1.png" class="card-img-top" alt="Services1">
                             <div class="card-body text-center">
-                                <h5 class="card-title" style="color: #FF5800;">Neque porro quisquam est</h5>
+                                <h5 class="card-title fw-bold" style="color: #FF5800;">Cat Grooming</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
                             </div>
                         </div>
@@ -176,9 +179,9 @@
                     <div class="col-2"></div>
                     <div class="col-5">
                         <div class="card shadow" >
-                            <img src="Services2.png" class="card-img-top" alt="Services2">
+                            <img src="image/Services2.png" class="card-img-top" alt="Services2">
                             <div class="card-body text-center">
-                                <h5 class="card-title" style="color: #FF5800;">Neque porro quisquam est</h5>
+                                <h5 class="card-title fw-bold" style="color: #FF5800;">Cat Care</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
                             </div>
                         </div>
@@ -189,7 +192,7 @@
                         <div class="card shadow" >
                             <img src="image/Services3.png" class="card-img-top" alt="Services3">
                             <div class="card-body text-center">
-                                <h5 class="card-title" style="color: #FF5800;">Neque porro quisquam est</h5>
+                                <h5 class="card-title fw-bold" style="color: #FF5800;">Cat Training</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
                             </div>
                         </div>
@@ -199,7 +202,7 @@
                         <div class="card shadow" >
                             <img src="image/Services4.png" class="card-img-top" alt="Services4">
                             <div class="card-body text-center">
-                                <h5 class="card-title" style="color: #FF5800;">Neque porro quisquam est</h5>
+                                <h5 class="card-title fw-bold" style="color: #FF5800;">Cat Hotel</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
                             </div>
                         </div>
@@ -208,21 +211,84 @@
             </div>
             <div class="col-2"></div>
         </div>
-<!-- Ini Footer -->
-        <div class="row" style="background-color: #D47C4E;">
+<!-- Ini Package -->
+        <div class="card border-0 bg-warning-subtle text-center" style="color: #FF5800;"><div class="h2 fw-bolder my-5">Packages</div>
+        <div class="row bg-warning-subtle justify-content-center">
             <div class="col-3">
-                <div class="card border-0 m-5" style="background-color: #D47C4E; height: 100px;" ><div class="h4 fw-bold text-light">CatCation.</div></div>
-                <div class="card border-0 m-5" style="background-color: #D47C4E;">
-                    <p class="lead text-light fw-bold" style="font-size: 15px;">Contact Us:</p>
-                    <p class="lead text-light fw-bold" style="font-size: 15px;"><img class="mx-2" src="image/LogoWA.png" alt="LogoWA" width="20px">+62-xxxx-xxx</p>
-                    <p class="lead text-light fw-bold" style="font-size: 15px;"><img class="mx-2" src="image/LogoIG.png" alt="LogoIG" width="20px">@CatCation.</p>
+                <div class="card shadow text-center border-0 rounded-2 m-auto" style="background: #FF894B; width: 80%;">
+                    <h5 class="card-title fw-bold text-light"><br><br>Basic<br><br><br></h5>
+                    <div class="card-body text-center bg-light rounded-top-5">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        </p>
+                        <a type="button" class="btn btn-warning text-light fw-bold hover" style="background-color: #FF5800;" href="package.html">Details</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-6"></div>
             <div class="col-3">
-                <div class="card border-0 m-5" style="background-color: #D47C4E;">
+                <div class="card shadow text-center border-0 rounded-2 m-auto" style="background: #FF742B; width: 80%;">
+                    <h5 class="card-title fw-bold text-light"><br><br>Premium<br><br><br></h5>
+                    <div class="card-body text-center bg-light rounded-top-5">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        </p>
+                        <a type="button" class="btn btn-warning text-light fw-bold hover" style="background-color: #FF5800;" href="package.html">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card shadow text-center border-0 rounded-2 m-auto" style="background: #FF5800; width: 80%;">
+                    <h5 class="card-title fw-bold text-light"><br><br>Luxury<br><br><br></h5>
+                    <div class="card-body text-center bg-light rounded-top-5">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        </p>
+                        <a type="button" class="btn btn-warning text-light fw-bold hover" style="background-color: #FF5800;" href="package.html">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Ini Footer -->
+        <div class="row bg-warning-subtle"><br><br><br></div>
+        <div class="row" style="background-color: #FF7A34;">
+            <div class="col-4">
+                <div class="card border-0 ms-5 mt-5 mb-2" style="background-color: #FF7A34;"><div class="h4 fw-bold text-light text-start">CatCation.</div></div>
+                <div class="card border-0 ms-5 mb-2" style="background-color: #FF7A34;">
+                    <div class="h5 fw-bold text-light text-start">Find us</div>
+                    <div class="card-text text-start text-light">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    </div>
+                    <br>
+                    <p class="lead text-light fw-bold text-start" style="font-size: 15px;">
+                        <img class="mx-1" src="image/LogoIG.png" alt="LogoIG" width="30px">
+                        <img class="mx-1" src="image/LogoFacebook.png" alt="LogoFacebook" width="30px">
+                        <img class="mx-1" src="image/LogoYucub.png" alt="LogoYucub" width="30px">
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-0 ms-5 mt-5 mb-2" style="background-color: #FF7A34;">
+                    <div class="h5 fw-bold text-light text-start">Services</div>
+                    <div class="card-text text-start">
+                        <p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-lighter">Cat Grooming</a></p>
+                        <p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-lighter">Cat Care</a></p>
+                        <p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-lighter">Cat Playtime</a></p>
+                        <p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-lighter">Cat Hotel</a></p>
+                    </div>
+                    <div class="h5 fw-bold text-light text-start mt-3">Contact Us</div>
+                    <p class="lead text-light fw-bold text-start" style="font-size: 15px;">
+                        <img class="mx-1" src="image/LogoWA.png" alt="LogoWA" width="30px">
+                        +6282-XXXX-XXXX
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-0 m-5 text-start" style="background-color: #FF7A34;">
                     <div class="h4 fw-bold text-light">About Us</div>
                     <p class="lead text-light" style="font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+                <div class="card border-0 ms-5 justify-content-end align-content-end align-items-end" style="background-color: #FF7A34;">
+                    <img class="ms-5" src="image/CatFooter1.png" alt="CatFooter1" width="200px">
                 </div>
             </div>
         </div>
