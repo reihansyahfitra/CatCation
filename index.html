@@ -13,7 +13,7 @@
         }
     </style>
 </head>  
-<body>
+<body style="background-color:#FF7A34;">
     <div class="container-fluid">
 <!--Ini adalah bagian Navigasi -->
         <div class="row bg-warning-subtle shadow-sm px-5 fixed-top">
@@ -53,7 +53,7 @@
                 <ul class="nav justify-content-end p-3">
                     <li class="nav-item">
                         <button type="button" class="btn btn-outline-warning mx-2 text-bg-light shadow-sm" style="border-color: #FF5800;">
-                        <div style="color: #FF5800;">Sign Up</div>
+                        <a href="signup.html" style="color: #FF5800; text-decoration: none;">Sign Up</a>
                         </button>
                     </li>
                     <li class="nav-item">
@@ -61,9 +61,6 @@
                         ;">Log in</button>
                     </li>
                 </ul>
-                <button type="button" class="btn shadow-sm" style="border-color: #FF5800;">
-                    <div  class="fw-bold" style="color: #FF5800;">Read More</div>
-                </button>
             </div>
         </div>
 <!-- Ini bagian Home -->
@@ -130,7 +127,7 @@
                             <img src="image/Kucing4Home.png" alt="Kucing4Home" width="100%">
                         </div>
                     </div>
-                </div><br><br><br><br><br id="about-us">
+                </div><br><br><br><br id="about-us"><br>
             </div>
             <div class="col-2"></div>
         </div>
@@ -154,7 +151,7 @@
                             <img src="image/AboutUs.png" alt="AboutUs" width="100%">
                         </div>
                     </div>
-                </div><br id="services">
+                </div><br id="services"><br>
             </div>
             <div class="col-2"></div>
         </div>
@@ -212,38 +209,70 @@
             <div class="col-2"></div>
         </div>
 <!-- Ini Package -->
-        <div class="card border-0 bg-warning-subtle text-center" style="color: #FF5800;"><div class="h2 fw-bolder my-5">Packages</div>
+        <script>
+            localStorage.clear();
+            function getPackage1(){
+                var packageName = document.getElementById('package-name-basic').innerHTML;
+
+                var packageDesc = document.getElementById("package-desc-basic").innerHTML;
+
+                localStorage.setItem("packagename", packageName);
+
+                localStorage.setItem("packagedesc", packageDesc)
+            }
+            function getPackage2(){
+                var packageName = document.getElementById('package-name-premium').innerHTML; 
+
+                var packageDesc = document.getElementById("package-desc-premium").innerHTML;
+
+                localStorage.setItem("packagename", packageName);
+
+                localStorage.setItem("packagedesc", packageDesc)
+            }
+            function getPackage3(){
+                var packageName = document.getElementById('package-name-luxury').innerHTML;
+
+                var packageDesc = document.getElementById("package-desc-luxury").innerHTML;
+
+                localStorage.setItem("packagename", packageName);
+
+                localStorage.setItem("packagedesc", packageDesc)
+            }
+        </script>
+        <div class="row bg-warning-subtle text-center">
+            <div class="h2 fw-bolder my-5" style="color: #FF5800;">Packages</div>
+        </div>
         <div class="row bg-warning-subtle justify-content-center">
             <div class="col-3">
                 <div class="card shadow text-center border-0 rounded-2 m-auto" style="background: #FF894B; width: 80%;">
-                    <h5 class="card-title fw-bold text-light"><br><br>Basic<br><br><br></h5>
+                    <h5 id="package-name-basic" class="card-title fw-bold text-light"><br><br>Basic<br><br><br></h5>
                     <div class="card-body text-center bg-light rounded-top-5">
-                        <p class="card-text">
+                        <p id="package-desc-basic" class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                         </p>
-                        <a type="button" class="btn btn-warning text-light fw-bold hover" style="background-color: #FF5800;" href="package.html">Details</a>
+                        <a type="button" class="btn btn-warning text-light fw-bold hover" style="background-color: #FF5800;" onclick="getPackage1()" href="package.html">Details</a>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="card shadow text-center border-0 rounded-2 m-auto" style="background: #FF742B; width: 80%;">
-                    <h5 class="card-title fw-bold text-light"><br><br>Premium<br><br><br></h5>
+                    <h5 id="package-name-premium" class="card-title fw-bold text-light"><br><br>Premium<br><br><br></h5>
                     <div class="card-body text-center bg-light rounded-top-5">
-                        <p class="card-text">
+                        <p id="package-desc-premium" class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                         </p>
-                        <a type="button" class="btn btn-warning text-light fw-bold hover" style="background-color: #FF5800;" href="package.html">Details</a>
+                        <a type="button" class="btn btn-warning text-light fw-bold hover" style="background-color: #FF5800;" onclick="getPackage2()" href="package.html">Details</a>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="card shadow text-center border-0 rounded-2 m-auto" style="background: #FF5800; width: 80%;">
-                    <h5 class="card-title fw-bold text-light"><br><br>Luxury<br><br><br></h5>
+                    <h5 id="package-name-luxury" class="card-title fw-bold text-light"><br><br>Luxury<br><br><br></h5>
                     <div class="card-body text-center bg-light rounded-top-5">
-                        <p class="card-text">
+                        <p id="package-desc-luxury" class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                         </p>
-                        <a type="button" class="btn btn-warning text-light fw-bold hover" style="background-color: #FF5800;" href="package.html">Details</a>
+                        <a type="button" class="btn btn-warning text-light fw-bold hover" style="background-color: #FF5800;" onclick="getPackage3()" href="package.html">Details</a>
                     </div>
                 </div>
             </div>

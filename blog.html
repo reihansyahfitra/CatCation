@@ -26,9 +26,21 @@
             background-color: #FF5800;
             border-color: #ddd;
         }
+        .pagination > .active > a
+        {
+            color: white;
+            background-color: #FF5800 !Important;
+            border: solid 1px #FF5800 !Important;
+        }
+
+        .pagination > .active > a:hover
+        {
+            background-color: #FF5800 !Important;
+            border: solid 1px #FF5800;
+        }
     </style>
 </head> 
-<body>
+<body style="background-color:#FF7A34;">
     <div class="container-fluid">
         <!-- --ini navigasi-- -->
         <div class="row bg-warning-subtle shadow-sm px-5 fixed-top">
@@ -199,7 +211,7 @@
                                 <span aria-hidden="true">&laquo;</span>
                             </a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item">
