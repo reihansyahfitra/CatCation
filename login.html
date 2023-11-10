@@ -16,64 +16,64 @@
             border-color: #FF5800;
         }
     </style>
+    <script>
+        function saveLogin(){
+            var email = document.getElementById("email-address").value;
+            var username = email.substring(0,email.indexOf("@"));
+            var login = true;
+
+            localStorage.setItem("user",username);
+            localStorage.setItem("status",login);
+        }
+    </script>
 </head>
 <body>
     <div class="container-fluid w-100">
         <div class="row h-100">
-            <form action="login.html" onsubmit="alert('Berhasil sign up!')" class="col-8 h-100 needs-validation m-auto w-50" novalidate>
+            <form action="index.html" class="col-8 h-100 needs-validation m-auto w-50" novalidate>
                 <div class="row justify-content-center">
                     <div class="card rounded-0 border-0 w-50">
                         <div class="card-body text-center">
                             <div class="card-title">
-                                <div class="h4 fw-bold">Sign Up</div>
+                                <div class="h4 fw-bold">Login</div>
                             </div>
                             <div class="card-text">
-                                <div class="lead text-secondary">Let's get started!</div>
+                                <div class="lead fw-bold">Hi, Welcome back!</div>
+                                <div class="text-secondary">Login and keep your cat's well-being a top priority</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <label for="first-name" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="first-name" required>
+                    <label for="email-address" class="form-label">E-mail</label>
+                    <input placeholder="e.g. agusgansabiez@gmail.com" type="text" class="form-control" id="email-address" required>
                     <div class="valid-feedback">
                         Okay
-                    </div>
-                </div><br>
-                <div class="row">
-                    <label for="last-name" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="last-name" required>
-                    <div class="valid-feedback">
-                        Okay
-                    </div>
-                </div><br>
-                <div class="row">
-                    <label for="user-name" class="form-label">E-mail</label>
-                    <input type="text" class="form-control" id="user-name" required>
-                    <div class="invalid-feedback">
-                        Please choose a E-mail!
                     </div>
                 </div><br>
                 <div class="row">
                     <label for="pass-word" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="pass-word" required>
+                    <input placeholder="Enter password" type="password" class="form-control" id="pass-word" required>
                     <div class="invalid-feedback">
                         Please insert your password!
                     </div>
                 </div><br>
                 <div class="row">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                            Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                            You must agree before submitting.
+                    <div class="col text-start">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Remember Me
+                            </label>
                         </div>
                     </div>
-                </div><br><br>
+                    <div class="col text-end">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div><br><br><br>
+                
                 <div class="row">
-                    <button class="btn fw-bold text-light" style="background-color: #FF5800;" type="submit">Sign Up</button>
+                    <button onclick="saveLogin()" class="btn fw-bold text-light" style="background-color: #FF5800;" type="submit">Log in</button>
                 </div><br><br>
                 <div class="row">
                     <div class="col"><hr></div>
@@ -81,10 +81,10 @@
                     <div class="col"><hr></div>
                 </div><br>
                 <div class="row">
-                    <button class="btn btn-light border-secondary border-2 fw-bold text-secondary" type="submit"><img src="image/LogoGoogle.png" alt="LogoGoogle"> Sign Up with Google</button>
+                    <button class="btn btn-light border-secondary border-2 fw-bold text-secondary" type="submit"><img src="image/LogoGoogle.png" alt="LogoGoogle">&nbsp; Log in with Google</button>
                 </div><br>
                 <div class="row text-center">
-                    <p class="text-secondary">Already have an account? <a href="login.html">Login</a></p>
+                    <p class="text-secondary">Don't have an account? <a href="signup.html">Sign Up</a></p>
                 </div>
             </form>
             <div class="col-4" style="background-color: #FFCB7C;">
